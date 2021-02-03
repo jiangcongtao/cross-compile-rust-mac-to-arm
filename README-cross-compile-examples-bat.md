@@ -7,6 +7,10 @@ git clone  https://github.com/sharkdp/bat.git
 
 TOOLCHAIN_TGZ=https://lisa.musl.cc/9.2.1/arm-linux-musleabi-cross.tgz
 MUSLCC_DIR=~/musl-cc && mkdir -p ${MUSLCC_DIR} && curl ${TOOLCHAIN_TGZ} | tar zxvvf - -C ${MUSLCC_DIR}
+
+- Need to install isl on Mac OS (WORKAROUND toolchains BUG)
+brew install isl
+
 ```
 
 ### create .cargo/config under project folder (bat) with the following content
