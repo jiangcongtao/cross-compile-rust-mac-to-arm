@@ -1,0 +1,3 @@
+[target.arm-unknown-linux-musleabi]
+linker = "arm-linux-musleabi-ld"
+# rustflags = ["-C", "target-feature=+crt-static"]
